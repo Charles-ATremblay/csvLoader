@@ -3,6 +3,7 @@
 #key: the first element of the row
 #value: the rest of the row
 import csv
+import json
 
 def csvLoader(csvFilePath):
     #create a dictionary
@@ -22,6 +23,19 @@ def csvLoader(csvFilePath):
     #return the dictionary
     return csvDict
 
-#run the function
-csvDict = csvLoader('C:\Charles\Practice\csvLoader\sampleFolder\Personne.csv')
-print(csvDict)
+def load_config(config_path):
+    with open(config_path, 'r') as config_file:
+        config_dict = json.load(config_file)
+    return config_dict
+
+
+# Load the configuration from the JSON file
+config_path = "config.json"
+config = load_config(config_path)
+
+# Get the CSV file path from the configuration
+csv_file_path = config["csv_file_path"]
+
+# Run the function using the CSV file path
+csvDict = csvLoader(csv_file_path)
+
