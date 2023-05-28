@@ -1,0 +1,11 @@
+info.id,name,lastName,sex,age,status
+1,Name1,LastName1,Male,45,Single
+2,Name2,LastName2,Female,32,Married
+3,Name3,LastName3,Female,27,Single
+4,Name4,LastName4,Male,52,Married
+5,Name5,LastName5,Male,19,Married
+6,Name6,LastName6,Female,33,Single
+7,Name7,LastName7,Female,41,Single
+8,Name8,LastName8,Male,64,Married
+9,Name9,LastName9,Male,20,Single
+10,Name10,LastName10,Female,29,Married
